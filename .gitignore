@@ -17,7 +17,8 @@
 /storage/*
 
 # I don't want to show my secrets
-/config/secrets.yml
+# goodbye secrets /config/secrets.yml
+/config/credentials.yml.enc
 
 /node_modules
 /yarn-error.log
