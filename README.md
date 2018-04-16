@@ -1,23 +1,32 @@
 # jsportfolio 2.0 application
 
-Some content
+> Ruby on Rails 5 application
 
-Things you may want to cover:
+### Features
 
-* Ruby version
+- Portfolio
+- Blog
+- Real-time chat engine for comments
+- Drag and drop interface
 
-* System dependencies
+### Code Example 
+- Fisher-Yates shuffle
 
-* Configuration
+```ruby
+def shuffle(array)
+  counter = array.length - 1
 
-* Database creation
+  while counter > 0
+    # item selected from the unshuffled part of array
+    random_index = rand(counter)
 
-* Database initialization
+    # swap the items at those locations
+    array[counter], array[random_index] = array[random_index], array[counter]
 
-* How to run the test suite
+    # de-increment counter
+    counter -= 1
+  end
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  array
+end
+```
